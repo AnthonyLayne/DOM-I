@@ -47,6 +47,20 @@ const siteContent = {
 
 console.log("project wired!");
 
+//Main Content
+
+const mainContent = document.querySelector(".top-content");
+mainContent.children[0].children[0].textContent =
+  siteContent["main-content"]["features-h4"];
+mainContent.children[0].children[1].textContent =
+  siteContent["main-content"]["features-content"];
+mainContent.children[1].children[0].textContent =
+  siteContent["main-content"]["about-h4"];
+mainContent.children[1].children[1].textContent =
+  siteContent["main-content"]["about-content"];
+
+//Content Below Image
+
 //Contact
 
 const contact = document.querySelector("section.contact");
