@@ -47,6 +47,20 @@ const siteContent = {
 
 console.log("project wired!");
 
+//NAVIGATION BAR
+
+const navBar = document.querySelectorAll("header nav a");
+const navTitle = Object.values(siteContent.nav);
+navBar.forEach((link, index) => {
+  link.textContent = navTitle[index];
+  link.classList.add("italic");
+});
+
+//Button-CTA
+
+document.querySelector("h1").textContent = siteContent.cta.h1;
+document.querySelector("button").textContent = siteContent.cta.button;
+
 //Main Content
 
 const mainContent = document.querySelector(".top-content");
