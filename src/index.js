@@ -61,6 +61,17 @@ mainContent.children[1].children[1].textContent =
 
 //Content Below Image
 
+const lowerContent = document.querySelector(".bottom-content");
+const bottomH4 = lowerContent.querySelectorAll("h4");
+bottomH4[0].textContent = siteContent["main-content"]["services-h4"];
+bottomH4[1].textContent = siteContent["main-content"]["product-h4"];
+bottomH4[2].textContent = siteContent["main-content"]["vision-h4"];
+const paragraphBottom = lowerContent.querySelectorAll("p");
+paragraphBottom[0].textContent =
+  siteContent["main-content"]["services-content"];
+paragraphBottom[1].textContent = siteContent["main-content"]["product-content"];
+paragraphBottom[2].textContent = siteContent["main-content"]["vision-content"];
+
 //Contact
 
 const contact = document.querySelector("section.contact");
