@@ -57,6 +57,9 @@ console.log("project wired!");
 
 //footer
 
+const footerCopy = document.querySelector("footer a");
+footerCopy.src = siteContent.footer.copyright;
+
 //images
 
 const logoImg = document.querySelector("#logo-img");
