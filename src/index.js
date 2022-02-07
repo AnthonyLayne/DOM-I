@@ -47,18 +47,19 @@ const siteContent = {
 
 console.log("project wired!");
 
-//NAV
+//Contact
 
-//CTA
-
-//Main-content
-
-//contact
+const contact = document.querySelector("section.contact");
+contact.children[0].textContent = siteContent.contact["contact-h4"];
+contact.children[1].textContent = siteContent.contact.address;
+contact.children[2].textContent = siteContent.contact.phone;
+contact.children[3].textContent = siteContent.contact.email;
 
 //footer
 
 const footerCopy = document.querySelector("footer a");
-footerCopy.src = siteContent.footer.copyright;
+footerCopy.textContent = siteContent.footer.copyright;
+footerCopy.classList.add("bold");
 
 //images
 
@@ -68,5 +69,5 @@ logoImg.src = siteContent.images["logo-img"];
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.src = siteContent.images["cta-img"];
 
-const accentImg = document.querySelector("#accent-img");
+const accentImg = document.querySelector("#middle-img");
 accentImg.src = siteContent.images["accent-img"];
